@@ -1,5 +1,5 @@
 
-%macro _obtain_sas_content_folder_uri(targetFolderContent);
+%macro _get_sas_content_folder_uri(targetFolderContent);
 
 /*-----------------------------------------------------------------------------------------*
     Macro to obtain the URI of a desired SAS Content folder if it exists.
@@ -100,4 +100,4 @@
       %end;
    %end;
 
-%mend _obtain_sas_content_folder_uri;
+%mend _get_sas_content_folder_uri;
