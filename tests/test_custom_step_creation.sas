@@ -5,7 +5,7 @@ proc python;
 import json
     
 filelocation="/mnt/viya-share/data/"
-name="Vector Databases - Hydrate Chroma DB Collection"
+name="Deep Learning - Build Model"
     
 step1=CustomStep(filelocation=filelocation, name=name, about=True)
     
