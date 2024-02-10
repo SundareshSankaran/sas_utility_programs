@@ -4,7 +4,7 @@ A repository containing some accessible SAS programs (maybe Python in future), m
 Also serves as a test bed for some future contribution to SAS Studio Custom Steps: https://www.github.com/sassoftware/sas-studio-custom-steps.
 
 ## List of Assets
-Refer this list.
+Refer this list [TBD].
 
 ## Contact
 - Sundaresh Sankaran (sundaresh.sankaran@gmail.com or sundaresh.sankaran@sas.com)
