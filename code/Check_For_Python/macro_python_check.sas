@@ -18,9 +18,13 @@
    Input:
    1. errorFlagName: Provide this with quotes when executing the macro. Name of an error flag macro 
                      variable. Specify this variable as global so that it can be used downstream.
+   2. errorFlagDesc: A reference to a macro variable, provided within quotes, which holds any 
+                     description of the check that has occurred. Specify this variable as global 
+                     so that it can be used downstream.
 
    Output:
-   1. PROC_PYPATH : A global variable which contains the path where Python can be found.
+   1. PROC_PYPATH : A global variable containing the path where Python can be found. Note that this is 
+                    different from the PROC_PYPATH compute session system option /environment variable.
    2. errorFlagDesc: Informational or error message as applicable written to a specified macro variable.
    3. errorFlagName: Populated specified macro variable with 1 (in case of errors) or 0.
 
