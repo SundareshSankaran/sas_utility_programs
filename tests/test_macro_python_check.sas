@@ -8,14 +8,16 @@
 *------------------------------------------------------------------------------------------ */
 
 %global error_flag;
+%global error_desc;
 
 filename getsasf URL "https://raw.githubusercontent.com/SundareshSankaran/sas_utility_programs/main/code/Check_For_Python/macro_python_check.sas";
 %include getsasf;
 filename getsasf clear;
 
 
-%_env_check_python("error_flag");
+%_env_check_python("error_flag","error_desc");
 
 %put &error_flag.;
+%put &error_desc.;
 
 %put &PROC_PYPATH.;

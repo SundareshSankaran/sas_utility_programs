@@ -35,7 +35,7 @@
    Sundaresh Sankaran, 07FEB2024
 *----------------------------------------------------------------------------------------------------- */
 
-%macro _env_check_python(errorFlagName);
+%macro _env_check_python(errorFlagName, errorFlagDesc);
     
    %global PROC_PYPATH;
 
