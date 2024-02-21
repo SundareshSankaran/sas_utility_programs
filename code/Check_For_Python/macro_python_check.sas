@@ -114,6 +114,8 @@
 
 %macro _env_check_python_batch(errorFlagName, errorFlagDesc);
 
+   %put NOTE: Entering Batch server Python check;
+
    data _null_;
       /* ----------------------------------------------------------------------------------------------* 
          Obtain system options and store them inside macro variables.
