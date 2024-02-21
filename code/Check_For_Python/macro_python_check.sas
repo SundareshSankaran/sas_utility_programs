@@ -145,7 +145,7 @@
                Check if BATCHSERVER_LOCKDOWN_ENABLE = 0, indicating a permissive (and potentially 
                insecure) environment.
             *------------------------------------------------------------------------------------------ */
-            if batch_enable = 1 then do;
+            if batch_enable = '1' then do;
                /* --------------------------------------------------------------------------------------* 
                   Check if PYTHON and SOCKET appear in viya_lockdown_user_methods.
                   There's an additional PYTHON_EMBED option which is included as a strict check (enabling 
@@ -189,7 +189,7 @@
    %else %if %index(%lowcase(&SYSPROCESSMODE),batch) > 0 %then %do;
 
       %put NOTE: This session is running in a Batch server;
-      %_env_check_python_compute(&errorFlagName, &errorFlagDesc);
+      %_env_check_python_batch(&errorFlagName, &errorFlagDesc);
 
    %end;
 
