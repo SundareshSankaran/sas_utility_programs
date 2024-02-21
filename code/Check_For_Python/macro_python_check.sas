@@ -81,7 +81,7 @@
                Check if COMPUTESERVER_LOCKDOWN_ENABLE = 0, indicating a permissive (and potentially 
                insecure) environment.
             *------------------------------------------------------------------------------------------ */
-            if compute_enable = 1 then do;
+            if compute_enable = '1' then do;
                /* --------------------------------------------------------------------------------------* 
                   Check if PYTHON and SOCKET appear in viya_lockdown_user_methods.
                   There's an additional PYTHON_EMBED option which is included as a strict check (enabling 
