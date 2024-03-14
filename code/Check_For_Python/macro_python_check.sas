@@ -50,6 +50,8 @@
 
 %macro _env_check_python_compute(errorFlagName, errorFlagDesc);
 
+   %global PROC_PYPATH;
+
    data _null_;
       /* ----------------------------------------------------------------------------------------------* 
          Obtain system options and store them inside macro variables.
@@ -116,6 +118,8 @@
 
    %put NOTE: Entering Batch server Python check;
 
+   %global PROC_PYPATH;
+
    data _null_;
       /* ----------------------------------------------------------------------------------------------* 
          Obtain system options and store them inside macro variables.
@@ -179,8 +183,6 @@
 *----------------------------------------------------------------------------------------------- */
 
 %macro _env_check_python(errorFlagName, errorFlagDesc);
-    
-   %global PROC_PYPATH;
 
    %if %index(%lowcase(&SYSPROCESSMODE),compute) > 0 %then %do;
 
