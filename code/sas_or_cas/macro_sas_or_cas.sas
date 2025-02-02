@@ -31,7 +31,7 @@
     %if %sysfunc(compress("&&&tableEngine.")) = "V9" %THEN %DO;
         data _null_;
             call symput("&tableEngine.","SAS");
-            call symputx("&errorFlag.",0);
+            call symputx("&errorFlagName.",0);
             call symput("&errorFlagDesc.","");
         run;
     %end;
